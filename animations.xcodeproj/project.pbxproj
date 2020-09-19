@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F2AE31DC6C0C0AA06E50E5D /* Pods_animations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759D8D6779676B9BE6E541CB /* Pods_animations.framework */; };
+		859300002514B8930034E872 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8593FFFF2514B8930034E872 /* model.swift */; };
 		8593FFEC2514AD330034E872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8593FFEB2514AD330034E872 /* AppDelegate.swift */; };
 		8593FFEE2514AD330034E872 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8593FFED2514AD330034E872 /* SceneDelegate.swift */; };
-		8593FFF02514AD330034E872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8593FFEF2514AD330034E872 /* ViewController.swift */; };
+		8593FFF02514AD330034E872 /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8593FFEF2514AD330034E872 /* AnimationsViewController.swift */; };
 		8593FFF32514AD330034E872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8593FFF12514AD330034E872 /* Main.storyboard */; };
 		8593FFF52514AD340034E872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8593FFF42514AD340034E872 /* Assets.xcassets */; };
 		8593FFF82514AD340034E872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8593FFF62514AD340034E872 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		759D8D6779676B9BE6E541CB /* Pods_animations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_animations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8593FFE82514AD330034E872 /* animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8593FFEB2514AD330034E872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8593FFED2514AD330034E872 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8593FFEF2514AD330034E872 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8593FFEF2514AD330034E872 /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
 		8593FFF22514AD330034E872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8593FFF42514AD340034E872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8593FFF72514AD340034E872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8593FFF92514AD340034E872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8593FFFF2514B8930034E872 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		C770AAA67619DFA91A4A000A /* Pods-animations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animations.release.xcconfig"; path = "Target Support Files/Pods-animations/Pods-animations.release.xcconfig"; sourceTree = "<group>"; };
+		EBCB67226D4798917065BC6F /* Pods-animations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animations.debug.xcconfig"; path = "Target Support Files/Pods-animations/Pods-animations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F2AE31DC6C0C0AA06E50E5D /* Pods_animations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65AFF3C9DF60A689B2DBC6B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB67226D4798917065BC6F /* Pods-animations.debug.xcconfig */,
+				C770AAA67619DFA91A4A000A /* Pods-animations.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8593FFDF2514AD320034E872 = {
 			isa = PBXGroup;
 			children = (
 				8593FFEA2514AD330034E872 /* animations */,
 				8593FFE92514AD330034E872 /* Products */,
+				65AFF3C9DF60A689B2DBC6B7 /* Pods */,
+				BBCBCF5A83016FA136A5B44C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +76,22 @@
 			children = (
 				8593FFEB2514AD330034E872 /* AppDelegate.swift */,
 				8593FFED2514AD330034E872 /* SceneDelegate.swift */,
-				8593FFEF2514AD330034E872 /* ViewController.swift */,
+				8593FFEF2514AD330034E872 /* AnimationsViewController.swift */,
 				8593FFF12514AD330034E872 /* Main.storyboard */,
 				8593FFF42514AD340034E872 /* Assets.xcassets */,
 				8593FFF62514AD340034E872 /* LaunchScreen.storyboard */,
 				8593FFF92514AD340034E872 /* Info.plist */,
+				8593FFFF2514B8930034E872 /* model.swift */,
 			);
 			path = animations;
+			sourceTree = "<group>";
+		};
+		BBCBCF5A83016FA136A5B44C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				759D8D6779676B9BE6E541CB /* Pods_animations.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8593FFFC2514AD340034E872 /* Build configuration list for PBXNativeTarget "animations" */;
 			buildPhases = (
+				6BCB5C1356A90405C88394C0 /* [CP] Check Pods Manifest.lock */,
 				8593FFE42514AD330034E872 /* Sources */,
 				8593FFE52514AD330034E872 /* Frameworks */,
 				8593FFE62514AD330034E872 /* Resources */,
+				DA2540CE5D7CF2DE8448E0F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +162,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6BCB5C1356A90405C88394C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-animations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA2540CE5D7CF2DE8448E0F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-animations/Pods-animations-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-animations/Pods-animations-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-animations/Pods-animations-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8593FFE42514AD330034E872 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8593FFF02514AD330034E872 /* ViewController.swift in Sources */,
+				8593FFF02514AD330034E872 /* AnimationsViewController.swift in Sources */,
 				8593FFEC2514AD330034E872 /* AppDelegate.swift in Sources */,
 				8593FFEE2514AD330034E872 /* SceneDelegate.swift in Sources */,
+				859300002514B8930034E872 /* model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +354,13 @@
 		};
 		8593FFFD2514AD340034E872 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBCB67226D4798917065BC6F /* Pods-animations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7F5MV2U5PR;
 				INFOPLIST_FILE = animations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +368,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mycompany.animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8593FFFE2514AD340034E872 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C770AAA67619DFA91A4A000A /* Pods-animations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7F5MV2U5PR;
 				INFOPLIST_FILE = animations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mycompany.animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
